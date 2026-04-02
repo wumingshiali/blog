@@ -1,7 +1,7 @@
 ---
 title: 第114514次迁移我的博客
 published: 2026-04-02
-description: ''
+description: '你知道我的博客迁移了多少次吗？有用哪些黑历史吗？'
 image: ''
 tags: ['网页', '踩坑']
 category: '编程'
