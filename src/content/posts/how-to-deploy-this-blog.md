@@ -2,7 +2,7 @@
 title: 怎么部署这个博客
 published: 2026-04-03
 description: '你知道我的博客怎么部署的吗？你想知道怎么部署一样的吗？'
-image: 'title.webp'
+image: './how-to-deploy-this-blog/title.webp'
 tags: ["网页", "博客"]
 category: '编程'
 draft: false 
