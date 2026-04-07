@@ -16,7 +16,7 @@ lang: ''
 打开
 ::github{repo='saicaca/fuwari'}
 然后点开下图Use this template按钮  
-<img src="./how-to-deploy-this-blog/1.webp" alt="Use this template按钮" width="400" height="195">  
+![Use this template按钮](./how-to-deploy-this-blog/1.webp)  
 然后跟Github的流程走，获得了自己的仓库之后clone下来。
 
 ## 方式2：本地创建
