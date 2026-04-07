@@ -2,7 +2,7 @@
 title: 怎么部署这个博客
 published: 2026-04-03
 description: '你知道我的博客怎么部署的吗？你想知道怎么部署一样的吗？'
-image: './pics/how-to-deploy-this-blog/title.webp'
+image: 'title.webp'
 tags: ["网页", "博客"]
 category: '编程'
 draft: false 
@@ -16,7 +16,7 @@ lang: ''
 打开
 ::github{repo='saicaca/fuwari'}
 ，然后点开下图Use this template按钮  
-<img src="./pics/how-to-deploy-this-blog/1.webp" alt="Use this template按钮" width="400" height="195">  
+<img src="1.webp" alt="Use this template按钮" width="400" height="195">  
 然后跟Github的流程走，获得了自己的仓库之后clone下来。
 
 ## 方式2：本地创建
