@@ -43,11 +43,11 @@ export const navBarConfig: NavBarConfig = {
   links: [
     LinkPreset.Home,
     LinkPreset.Archive,
-    {
-      name: "监控",
-      url: "https://github.com/wumingshiali/blog", // Internal links should not include the base path, as it is automatically added
-      external: true, // Show an external link icon and will open in a new tab
-    },
+    // {
+    //   name: "监控",
+    //   url: "https://github.com/wumingshiali/blog", // Internal links should not include the base path, as it is automatically added
+    //   external: true, // Show an external link icon and will open in a new tab
+    // },
   ],
 };
 
