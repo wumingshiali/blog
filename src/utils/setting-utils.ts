@@ -27,6 +27,37 @@ export function setHue(hue: number): void {
 	r.style.setProperty("--hue", String(hue));
 }
 
+function getGiscusTheme(theme: LIGHT_DARK_MODE): string {
+	switch (theme) {
+		case LIGHT_MODE:
+			return "light";
+		case DARK_MODE:
+			return "dark";
+		case AUTO_MODE:
+			return window.matchMedia("(prefers-color-scheme: dark)").matches
+				? "dark"
+				: "light";
+	}
+}
+
+function updateGiscusTheme(theme: LIGHT_DARK_MODE): void {
+	const iframe = document.querySelector<HTMLIFrameElement>("iframe.giscus-frame");
+	if (!iframe?.contentWindow) {
+		return;
+	}
+
+	iframe.contentWindow.postMessage(
+		{
+			giscus: {
+				setConfig: {
+					theme: getGiscusTheme(theme),
+				},
+			},
+		},
+		"https://giscus.app",
+	);
+}
+
 export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 	switch (theme) {
 		case LIGHT_MODE:
@@ -49,6 +80,8 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 		"data-theme",
 		expressiveCodeConfig.theme,
 	);
+
+	updateGiscusTheme(theme);
 }
 
 export function setTheme(theme: LIGHT_DARK_MODE): void {
