@@ -54,7 +54,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: "assets/images/head.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: "Ukncat",
-  bio: "开源既自由，自由既万物\nOpen source is freedom. Freedom builds the world.",
+  bio: "开源即自由，自由即万物\nOpen source is freedom. Freedom builds the world.",
   links: [
     {
       name: "GitHub",
